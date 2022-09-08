@@ -1,3 +1,5 @@
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from '../NotificationButton'
 import './styles.css'
 
@@ -9,10 +11,20 @@ function SalesCard() {
                 <h2 className="sf-sales-title">Vendas</h2>
                 <div>
                     <div className="sf-form-control-container">
-                        <input className="sf-form-control" type="text" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="sf-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                     <div className="sf-form-control-container">
-                        <input className="sf-form-control" type="text" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="sf-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                 </div>
 
@@ -40,7 +52,7 @@ function SalesCard() {
                                 <td>R$ 55.300,00</td>
                                 <td>
                                     <div className="sf-red-btn-container">
-                                       <NotificationButton />
+                                        <NotificationButton />
 
                                     </div>
                                 </td>
@@ -54,7 +66,7 @@ function SalesCard() {
                                 <td>R$ 55.300,00</td>
                                 <td>
                                     <div className="sf-red-btn-container">
-                                    <NotificationButton />
+                                        <NotificationButton />
 
                                     </div>
                                 </td>
@@ -68,7 +80,7 @@ function SalesCard() {
                                 <td>R$ 55.300,00</td>
                                 <td>
                                     <div className="sf-red-btn-container">
-                                    <NotificationButton />
+                                        <NotificationButton />
 
                                     </div>
                                 </td>
